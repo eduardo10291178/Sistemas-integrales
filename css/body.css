@@ -1,0 +1,1000 @@
+* {
+    /*font-family: 'Montserrat', sans-serif;*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 20px;
+}
+
+.lineaseparadora {
+    background-color: #002765;
+    height: 3px;
+    margin: 30px;
+
+}
+/* por resolveer*/
+.unit {
+    display: flex;
+    flex: 0 1 100%;
+    margin-bottom: -20px;
+    margin-left: -30px;
+  }
+
+  * + .services-classic-text {
+    margin-top: 10px;
+  }
+
+  .unit-body {
+    flex: 0 1 auto;
+  }
+  .unit > * {
+    margin-bottom: 20px;
+    margin-left: 30px;
+  }
+  *, ::before, ::after {
+    box-sizing: border-box;
+  }
+  .unit-left, .unit-right {
+    flex: 0 0 auto;
+    max-width: 100%;
+  }
+  .unit > * {
+    margin-bottom: 20px;
+    margin-left: 30px;
+  }
+  *, ::before, ::after {
+    box-sizing: border-box;
+  }
+
+@media (max-width: 991.98px){
+.services-classic .unit {
+  margin-bottom: -20px;
+  margin-left: -20px;
+}}
+
+/*
+ * jQuery Nivo Slider v3.2
+ * http://nivo.dev7studios.com
+ *
+ * Copyright 2012, Dev7studios
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+/*IMAGENES DE PORTADAS*/
+.theme-mi-slider .nivoSlider {
+    position: relative;
+}
+
+.theme-mi-slider .nivoSlider a {
+    border: 0;
+    display: block;
+}
+
+/* Nivo Pagination =========================*/
+.nivo-controlNav {
+    display: flex;
+    justify-content: center;
+}
+
+.theme-mi-slider .nivo-control {
+    display: block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #002765;
+    margin: 3px;
+    text-indent: -9999px
+}
+
+.theme-mi-slider .nivo-control:hover {
+    background: #005CF0;
+}
+
+.theme-mi-slider .active {
+    background: #498AF2;
+}
+
+/* Nivo direction ============*/
+.nivo-directionNav a {
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+.nivo-directionNav .nivo-prevNav {
+    background-image: url(../img/circle-left.png);
+    background-size: cover;
+    text-indent: -9999px;
+    left: 6px;
+}
+
+.nivo-directionNav .nivo-nextNav {
+    background-image: url(../img/circle-right.png);
+    background-size: cover;
+    text-indent: -9999px;
+    right: 6px;
+}
+
+
+/*Nivo Caption*/
+
+.nivo-html-caption {
+    position: absolute;
+}
+
+/* The Nivo Slider styles */
+.nivoSlider {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+
+}
+
+.nivoSlider img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    max-width: none;
+    background-color: #002765;
+
+}
+
+.nivo-main-image {
+    display: block !important;
+    position: relative !important;
+    width: 100% !important;
+
+}
+
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    z-index: 6;
+    display: none;
+    background: #002765;
+    filter: alpha(opacity=0.9);
+
+}
+
+/* The slices and boxes in the Slider */
+.nivo-slice {
+    display: block;
+    position: absolute;
+    z-index: 5;
+    height: 100%;
+    top: 0;
+
+}
+
+.nivo-box {
+    display: block;
+    position: absolute;
+    z-index: 5;
+    overflow: hidden;
+
+}
+
+.nivo-box img {
+    display: block;
+
+}
+
+/* Caption styles */
+.nivo-caption {
+    position: absolute;
+    top: 0%;
+    left: 0px;
+    bottom: 0px;
+   
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    z-index: 8;
+    padding: 20%;
+    overflow: hidden;
+    display: none;
+    background: linear-gradient(rgb(0, 39, 101, 0.40), rgba(0, 39, 101, 0.40));
+}
+
+.nivo-caption p {
+    padding: 5px;
+    margin: 0;
+
+}
+
+.nivo-caption a {
+    display: inline !important;
+}
+
+.nivo-html-caption {
+    display: none;
+}
+
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+    position: absolute;
+    top: 45%;
+    z-index: 9;
+    cursor: pointer;
+}
+
+.nivo-prevNav {
+    left: 0px;
+}
+
+.nivo-nextNav {
+    right: 0px;
+}
+
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav {
+    text-align: center;
+}
+
+.nivo-controlNav a {
+    cursor: pointer;
+}
+
+.nivo-controlNav a.active {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 850px) {
+    .nivo-caption {
+        position: absolute;
+        top: 0%;
+        left: 0px;
+        bottom: 0px;
+        
+        text-align: center;
+        color: #fff;
+        width: 100%;
+        z-index: 8;
+        padding: 9%;
+        overflow: hidden;
+        display: none;
+        background: linear-gradient(rgb(0, 39, 101, 0.40), rgba(0, 39, 101, 0.40));
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .nivo-caption {
+        position: absolute;
+        top: 0%;
+        left: 0px;
+        bottom: 0px;
+        
+        text-align: center;
+        color: #fff;
+        width: 100%;
+        z-index: 8;
+        padding: 4%;
+        overflow: hidden;
+        display: none;
+        background: linear-gradient(rgb(0, 39, 101, 0.40), rgba(0, 39, 101, 0.40));
+    }
+}
+
+/*AQUI TERMINA IMAGENES PORTADA*/
+
+/*CUADROS DE VENTAS*/
+.title--11 {
+    text-align: center;
+    font-size: 40px;
+    color: #6a6a6a;
+    font-weight: 100;
+    
+}
+
+.titulo--paquete {
+    background: #002765;
+    color: #fff;
+}
+
+.container--11 {
+    width: 100%;
+    max-width: 1300px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.container--11 .card--11 {
+    width: 330px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 39, 101, 0.40);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.container--11 .card--11:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 39, 101, 0.40);
+}
+
+.container--11 .card--11 img {
+    width: 330px;
+    height: 220px;
+}
+
+
+.container--11 .card--11 h4 {
+    font-weight: 600;
+}
+
+.container--11 .card--11 p {
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+    color: red;
+}
+
+.container--11 .card--11 a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #002765;
+}
+
+/*TERMINA CUADRO DE VENTAS*/
+/*PROMOCIONES CUADRO*/
+.left-box {
+    
+    color: #fff;
+    padding: 30px;
+    text-align: justify;
+}
+
+.contenedor {
+    padding: 60px 0;
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo {
+    color: #002765;
+    font-size: 30px;
+    text-align: center;
+    /*margin-bottom: 60px;*/
+}
+
+.titulo--servicios {
+    padding: 30px;
+    text-align: center;
+}
+
+/* About us */
+main .sobre-nosotros {
+    padding: 60px 0 1px 0;
+}
+
+.contenedor-sobre-nosotros {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-about-us {
+    width: 40%;
+}
+
+.sobre-nosotros .contenido-textos {
+    width: 40%;
+}
+
+.contenido-textos h3 {
+    margin-bottom: 15px;
+}
+
+.contenido-textos h3 span {
+    background: #4d0686;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 39, 101, 0.40);
+    margin-right: 5px;
+}
+
+.contenido-textos p {
+    padding: 20px 10px 0px 10px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+/*  Our team */
+.about-services {
+    background: #f2f2f2;
+    padding-bottom: 30px;
+}
+
+.servicio-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.servicio-ind {
+    width: 28%;
+    text-align: center;
+}
+
+.servicio-ind img {
+    width: 90%;
+}
+
+.servicio-ind h3 {
+    margin: 10px 0;
+}
+
+.servicio-ind p {
+    font-weight: 300;
+    text-align: justify;
+}
+
+@media screen and (max-width:900px) {
+    header {
+        background-position: center;
+    }
+
+    .contenedor-sobre-nosotros {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sobre-nosotros .contenido-textos {
+        width: 90%;
+    }
+
+    .imagen-about-us {
+        width: 90%;
+    }
+
+    /* servicios */
+
+    .servicio-cont {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .servicio-ind {
+        width: 100%;
+        text-align: center;
+    }
+
+    .servicio-ind:nth-child(1),
+    .servicio-ind:nth-child(2) {
+        margin-bottom: 60px;
+    }
+
+    .servicio-ind img {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:500px) {
+
+    /* ABOUT US */
+    .imagen-about-us {
+        margin-bottom: 6px;
+        width: 90%;
+    }
+
+    .sobre-nosotros .contenido-textos {
+        width: 95%;
+    }
+
+    .left-box {
+        padding: 20px;
+        justify-content: justify;
+        
+    }
+    .titulo--servicios {
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+/*AQUI TERMINA CUADRO DE PROMOCIONES*/
+
+
+/*Logos de marcas carusell */
+.container-1 {
+    padding-top: 10px;
+}
+
+.slick-slide {
+    margin: 0 20px;
+}
+
+.slick-slide img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+}
+
+.slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block
+}
+
+.slick-slide {
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+
+.slick-slide img {
+    display: block;
+}
+
+.slick-initialized .slick-slide {
+    display: block;
+}
+
+/*AQUI TERMINA Logos de marcas carusell */
+
+
+/*MAS TRABAJOS Y CALIDA PROFECIONALISMO*/
+@media screen and (min-width: 968px) {
+    :root {
+        --big-font-size: 3.5rem;
+        --h2-font-size: 2rem;
+        --normal-font-size: 1rem;
+        --smaller-font-size: .875rem;
+    }
+}
+
+/*===== BASE =====*/
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*===== CLASS CSS ===== */
+.section-title {
+    position: relative;
+    font-size: var(--h2-font-size);
+    color: var(--first-color);
+    margin-top: var(--mb-2);
+    margin-bottom: var(--mb-4);
+    text-align: center;
+}
+
+.section-title::after {
+    position: absolute;
+    content: '';
+    width: 64px;
+    height: 0.18rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 2rem;
+    background-color: var(--first-color);
+}
+
+.section {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+/*===== LAYOUT =====*/
+.bd-grid {
+    max-width: 1024px;
+    display: grid;
+    margin-left: var(--mb-2);
+    margin-right: var(--mb-2);
+}
+
+.l-header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: #fff;
+    box-shadow: 0 1px 4px rgba(0, 39, 101, 0.40);
+}
+
+/*===== NAV =====*/
+.nav {
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: var(--font-semi);
+}
+
+@media screen and (max-width: 767px) {
+    .nav__menu {
+        position: fixed;
+        top: var(--header-height);
+        right: -100%;
+        width: 80%;
+        height: 100%;
+        padding: 2rem;
+        background-color: var(--second-color);
+        transition: .5s;
+    }
+}
+
+.nav__item {
+    margin-bottom: var(--mb-4);
+}
+
+.nav__link {
+    position: relative;
+    color: #fff;
+}
+
+.nav__link:hover {
+    position: relative;
+}
+
+.nav__link:hover::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 0.18rem;
+    left: 0;
+    top: 2rem;
+    background-color: var(--first-color);
+}
+
+.nav__logo {
+    color: var(--second-color);
+}
+
+.nav__toggle {
+    color: var(--second-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/*Active menu*/
+.active::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 0.18rem;
+    left: 0;
+    top: 2rem;
+    background-color: var(--first-color);
+}
+
+/*=== Show menu ===*/
+.show {
+    right: 0;
+}
+
+/*===== HOME =====*/
+.home {
+    position: relative;
+    row-gap: 5rem;
+    padding: 4rem 0 5rem;
+}
+
+.home__data {
+    align-self: center;
+}
+
+.home__title {
+    font-size: var(--big-font-size);
+    margin-bottom: var(--mb-5);
+}
+
+.home__title-color {
+    color: var(--first-color);
+}
+
+.home__social {
+    display: flex;
+    flex-direction: column;
+}
+
+.home__social-icon {
+    width: max-content;
+    margin-bottom: var(--mb-2);
+    font-size: 1.5rem;
+    color: var(--second-color);
+}
+
+.home__social-icon:hover {
+    color: var(--first-color);
+}
+
+.home__img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 260px;
+}
+
+.home__blob {
+    fill: var(--first-color);
+}
+
+.home__blob-img {
+    width: 360px;
+}
+
+/* ===== WORK =====*/
+.work__container {
+    row-gap: 2rem;
+}
+
+.work__img {
+    box-shadow: 0px 4px 25px rgba(0, 39, 101, 0.40);
+    border-radius: .5rem;
+    overflow: hidden;
+}
+
+.work__img img {
+    transition: 1s;
+}
+
+.work__img img:hover {
+    transform: scale(1.1);
+}
+
+/* ===== MEDIA QUERIES=====*/
+@media screen and (max-width: 320px) {
+    .home {
+        row-gap: 2rem;
+    }
+
+    .home__img {
+        width: 200px;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .home {
+        padding: 4rem 0 2rem;
+    }
+
+    .home__social {
+        padding-top: 0;
+        padding-bottom: 2.5rem;
+        flex-direction: row;
+        align-self: flex-end;
+    }
+
+    .home__social-icon {
+        margin-bottom: 0;
+        margin-right: var(--mb-4);
+    }
+
+    .home__img {
+        width: 300px;
+        bottom: 25%;
+    }
+
+    .about__container {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        text-align: initial;
+    }
+
+    .skills__container {
+        grid-template-columns: .7fr;
+        justify-content: center;
+        column-gap: 1rem;
+    }
+
+    .work__container {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+        padding-top: 2rem;
+    }
+
+    .contact__form {
+        width: 360px;
+        padding-top: 2rem;
+    }
+
+    .contact__container {
+        justify-items: center;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        margin: 0;
+    }
+
+    .section {
+        padding-top: 4rem;
+        padding-bottom: 3rem;
+    }
+
+    .section-title {
+        margin-bottom: var(--mb-6);
+    }
+
+    .section-title::after {
+        width: 80px;
+        top: 3rem;
+    }
+
+    .nav {
+        height: calc(var(--header-height) + 1.5rem);
+    }
+
+    .nav__list {
+        display: flex;
+        padding-top: 0;
+    }
+
+    .nav__item {
+        margin-left: var(--mb-6);
+        margin-bottom: 0;
+    }
+
+    .nav__toggle {
+        display: none;
+    }
+
+    .nav__link {
+        color: var(--second-color);
+    }
+
+    .home {
+        padding: 8rem 0 2rem;
+    }
+
+    .home__img {
+        width: 400px;
+        bottom: 10%;
+    }
+
+    .about__container {
+        padding-top: 2rem;
+    }
+
+    .about__img img {
+        width: 300px;
+    }
+
+    .skills__container {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+        align-items: center;
+        text-align: initial;
+    }
+
+    .work__container {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .bd-grid {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .home {
+        padding: 10rem 0 2rem;
+    }
+
+    .home__img {
+        width: 450px;
+    }
+}
+
+/*TERMINA MAS TRABAJOS Y CALIDA PROFECIONALISMO*/
+/*PORTAFOLIO DE IMAGENES TRABAJOS REALIZADOS*/
+/*Iconos regresar*/
+.Portafoli---regresar {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Portafoli---regresar a {
+    margin-top: 4px;
+}
+
+.Portafoli---regresar img {
+    width: 60px;
+    padding: 4px;
+    background: rgba(0, 0, 0, 0.0);
+    cursor: pointer;
+    border-radius: 100%;
+    transition: all 300ms;
+}
+
+.Portafoli---regresar a:hover img {
+    background: rgba(0, 39, 101, 0.40);
+}
+
+/*Portafilio pagina*/
+.titulo {
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    margin: 10px;
+}
+
+.galeria img {
+    box-shadow: 0 8px 10px -4px rgba(0, 39, 101, 0.40);
+    border-radius: 15px;
+}
+
+.materialbox-caption {
+    bottom: 30px;
+    right: 0;
+    width: 40%;
+    height: auto;
+    padding: 10px;
+    margin: auto;
+    background: #002765;
+    box-shadow: 5px 5px #fff;
+    font-size: 20px;
+    color: #fff;
+    line-height: 28px;
+}
+
+.galeria .col {
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .materialbox-caption {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .materialbox-caption {
+        width: 70%;
+    }
+}
+
+/*AQUI TERMIRMINA PORTAFOLIO DE IMAGENES TRABAJOS REALIZADOS*/
